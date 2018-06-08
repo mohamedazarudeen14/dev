@@ -1,0 +1,9 @@
+D:\Projects\BillingService\SharedClasses\bin\Release\SharedClasses.dll.config
+D:\Projects\BillingService\SharedClasses\bin\Release\SharedClasses.dll
+D:\Projects\BillingService\SharedClasses\bin\Release\SharedClasses.pdb
+D:\Projects\BillingService\SharedClasses\bin\Release\EntityFramework.dll
+D:\Projects\BillingService\SharedClasses\bin\Release\EntityFramework.SqlServer.dll
+D:\Projects\BillingService\SharedClasses\bin\Release\EntityFramework.xml
+D:\Projects\BillingService\SharedClasses\bin\Release\EntityFramework.SqlServer.xml
+D:\Projects\BillingService\SharedClasses\obj\Release\SharedClasses.dll
+D:\Projects\BillingService\SharedClasses\obj\Release\SharedClasses.pdb

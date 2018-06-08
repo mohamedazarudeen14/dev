@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AzarudeenModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdminLoginDetails">
+    <Key>
+      <PropertyRef Name="userName" />
+    </Key>
+    <Property Name="userName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdminProductChanges">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="AdminUserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="productID" Type="int" Nullable="false" />
+    <Property Name="productName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="price" Type="float" Nullable="false" />
+    <Property Name="quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductDetails">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="productID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="productName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="price" Type="float" Nullable="false" />
+    <Property Name="quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PurchaseProductDetail">
+    <Key>
+      <PropertyRef Name="purchaseProductID" />
+    </Key>
+    <Property Name="purchaseProductID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Customer Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="productID" Type="int" Nullable="false" />
+    <Property Name="productName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="price" Type="int" Nullable="false" />
+    <Property Name="quantity" Type="int" Nullable="false" />
+    <Property Name="Total Bill Amount" Type="int" Nullable="false" />
+    <Property Name="Discount Percentage" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Discounted Amount" Type="int" Nullable="false" />
+    <Property Name="Discounted Bill" Type="int" />
+  </EntityType>
+  <EntityContainer Name="AzarudeenModelStoreContainer">
+    <EntitySet Name="AdminLoginDetails" EntityType="Self.AdminLoginDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdminProductChanges" EntityType="Self.AdminProductChanges" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductDetails" EntityType="Self.ProductDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PurchaseProductDetail" EntityType="Self.PurchaseProductDetail" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

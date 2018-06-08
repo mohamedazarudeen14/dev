@@ -1,0 +1,12 @@
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Release\DataAccessForBillingApplication.dll.config
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Release\DataAccessForBillingApplication.dll
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Release\DataAccessForBillingApplication.pdb
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Release\CommonClasses.dll
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Release\EntityFramework.dll
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Release\EntityFramework.SqlServer.dll
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Release\CommonClasses.pdb
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Release\EntityFramework.xml
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Release\EntityFramework.SqlServer.xml
+D:\Projects\BillingService\DataAccessForBillingApplication\obj\Release\DataAccessForBillingApplication.csprojResolveAssemblyReference.cache
+D:\Projects\BillingService\DataAccessForBillingApplication\obj\Release\DataAccessForBillingApplication.dll
+D:\Projects\BillingService\DataAccessForBillingApplication\obj\Release\DataAccessForBillingApplication.pdb

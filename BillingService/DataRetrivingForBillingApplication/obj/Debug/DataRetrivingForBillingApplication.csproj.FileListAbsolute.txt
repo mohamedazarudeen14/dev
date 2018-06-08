@@ -1,0 +1,24 @@
+C:\Users\Unity\Documents\Visual Studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\obj\Debug\DataRetrivingForBillingApplication.csprojResolveAssemblyReference.cache
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\bin\Debug\DataRetrivingForBillingApplication.dll.config
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\bin\Debug\DataRetrivingForBillingApplication.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\bin\Debug\DataRetrivingForBillingApplication.pdb
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\bin\Debug\DataAccessForBillingApplication.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\bin\Debug\EntityFramework.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\bin\Debug\SharedClasses.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\bin\Debug\DataAccessForBillingApplication.pdb
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\bin\Debug\SharedClasses.pdb
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\bin\Debug\EntityFramework.xml
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\obj\Debug\DataRetrivingForBillingApplication.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataRetrivingForBillingApplication\obj\Debug\DataRetrivingForBillingApplication.pdb
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Debug\DataRetrivingForBillingApplication.dll.config
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Debug\DataRetrivingForBillingApplication.dll
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Debug\DataRetrivingForBillingApplication.pdb
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Debug\DataAccessForBillingApplication.dll
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Debug\SharedClasses.dll
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Debug\DataAccessForBillingApplication.pdb
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Debug\SharedClasses.pdb
+D:\Projects\BillingService\DataRetrivingForBillingApplication\obj\Debug\DataRetrivingForBillingApplication.csprojResolveAssemblyReference.cache
+D:\Projects\BillingService\DataRetrivingForBillingApplication\obj\Debug\DataRetrivingForBillingApplication.dll
+D:\Projects\BillingService\DataRetrivingForBillingApplication\obj\Debug\DataRetrivingForBillingApplication.pdb

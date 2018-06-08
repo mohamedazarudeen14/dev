@@ -1,0 +1,10 @@
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\SharedClasses\bin\Debug\SharedClasses.dll.config
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\SharedClasses\bin\Debug\SharedClasses.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\SharedClasses\bin\Debug\SharedClasses.pdb
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\SharedClasses\bin\Debug\EntityFramework.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\SharedClasses\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\SharedClasses\bin\Debug\EntityFramework.xml
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\SharedClasses\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\SharedClasses\obj\Debug\SharedClasses.csprojResolveAssemblyReference.cache
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\SharedClasses\obj\Debug\SharedClasses.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\SharedClasses\obj\Debug\SharedClasses.pdb

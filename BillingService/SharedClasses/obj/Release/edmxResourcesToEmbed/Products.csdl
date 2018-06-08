@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AzarudeenModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="AzarudeenEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdminLoginDetails" EntityType="AzarudeenModel.AdminLoginDetail" />
+    <EntitySet Name="AdminProductChanges" EntityType="AzarudeenModel.AdminProductChanx" />
+    <EntitySet Name="ProductDetails" EntityType="AzarudeenModel.ProductDetail" />
+    <EntitySet Name="PurchaseProductDetails" EntityType="AzarudeenModel.PurchaseProductDetail" />
+    <AssociationSet Name="FK_AdminProductChanges_AdminLoginDetails" Association="AzarudeenModel.FK_AdminProductChanges_AdminLoginDetails">
+      <End Role="AdminLoginDetail" EntitySet="AdminLoginDetails" />
+      <End Role="AdminProductChanx" EntitySet="AdminProductChanges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseProductDetail_ProductDetail" Association="AzarudeenModel.FK_PurchaseProductDetail_ProductDetail">
+      <End Role="ProductDetail" EntitySet="ProductDetails" />
+      <End Role="PurchaseProductDetail" EntitySet="PurchaseProductDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AdminLoginDetail">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AdminProductChanges" Relationship="AzarudeenModel.FK_AdminProductChanges_AdminLoginDetails" FromRole="AdminLoginDetail" ToRole="AdminProductChanx" />
+  </EntityType>
+  <EntityType Name="AdminProductChanx">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="userID" Type="Int32" Nullable="false" />
+    <Property Name="productID" Type="Int32" Nullable="false" />
+    <Property Name="productName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" Nullable="false" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AdminLoginDetail" Relationship="AzarudeenModel.FK_AdminProductChanges_AdminLoginDetails" FromRole="AdminProductChanx" ToRole="AdminLoginDetail" />
+  </EntityType>
+  <EntityType Name="ProductDetail">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="productID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="productName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" Nullable="false" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PurchaseProductDetails" Relationship="AzarudeenModel.FK_PurchaseProductDetail_ProductDetail" FromRole="ProductDetail" ToRole="PurchaseProductDetail" />
+  </EntityType>
+  <EntityType Name="PurchaseProductDetail">
+    <Key>
+      <PropertyRef Name="purchaseProductID" />
+    </Key>
+    <Property Name="purchaseProductID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Customer_Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="productID" Type="Int32" Nullable="false" />
+    <Property Name="productName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Int32" Nullable="false" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <Property Name="Total_Bill_Amount" Type="Int32" Nullable="false" />
+    <Property Name="Discount_Percentage" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Discounted_Amount" Type="Int32" Nullable="false" />
+    <Property Name="Discounted_Bill" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ProductDetail" Relationship="AzarudeenModel.FK_PurchaseProductDetail_ProductDetail" FromRole="PurchaseProductDetail" ToRole="ProductDetail" />
+  </EntityType>
+  <Association Name="FK_AdminProductChanges_AdminLoginDetails">
+    <End Type="AzarudeenModel.AdminLoginDetail" Role="AdminLoginDetail" Multiplicity="1" />
+    <End Type="AzarudeenModel.AdminProductChanx" Role="AdminProductChanx" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdminLoginDetail">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="AdminProductChanx">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseProductDetail_ProductDetail">
+    <End Type="AzarudeenModel.ProductDetail" Role="ProductDetail" Multiplicity="1" />
+    <End Type="AzarudeenModel.PurchaseProductDetail" Role="PurchaseProductDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductDetail">
+        <PropertyRef Name="productID" />
+      </Principal>
+      <Dependent Role="PurchaseProductDetail">
+        <PropertyRef Name="productID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AzarudeenModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AdminLoginDetails">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdminProductChanges">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="userID" Type="int" Nullable="false" />
+    <Property Name="productID" Type="int" Nullable="false" />
+    <Property Name="productName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="price" Type="float" Nullable="false" />
+    <Property Name="quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductDetail">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="productID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="productName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="price" Type="float" Nullable="false" />
+    <Property Name="quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PurchaseProductDetail">
+    <Key>
+      <PropertyRef Name="purchaseProductID" />
+    </Key>
+    <Property Name="purchaseProductID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Customer Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="productID" Type="int" Nullable="false" />
+    <Property Name="productName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="price" Type="int" Nullable="false" />
+    <Property Name="quantity" Type="int" Nullable="false" />
+    <Property Name="Total Bill Amount" Type="int" Nullable="false" />
+    <Property Name="Discount Percentage" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Discounted Amount" Type="int" Nullable="false" />
+    <Property Name="Discounted Bill" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_AdminProductChanges_AdminLoginDetails">
+    <End Role="AdminLoginDetails" Type="Self.AdminLoginDetails" Multiplicity="1" />
+    <End Role="AdminProductChanges" Type="Self.AdminProductChanges" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdminLoginDetails">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="AdminProductChanges">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseProductDetail_ProductDetail">
+    <End Role="ProductDetail" Type="Self.ProductDetail" Multiplicity="1" />
+    <End Role="PurchaseProductDetail" Type="Self.PurchaseProductDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductDetail">
+        <PropertyRef Name="productID" />
+      </Principal>
+      <Dependent Role="PurchaseProductDetail">
+        <PropertyRef Name="productID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AzarudeenModelStoreContainer">
+    <EntitySet Name="AdminLoginDetails" EntityType="Self.AdminLoginDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdminProductChanges" EntityType="Self.AdminProductChanges" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductDetail" EntityType="Self.ProductDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PurchaseProductDetail" EntityType="Self.PurchaseProductDetail" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AdminProductChanges_AdminLoginDetails" Association="Self.FK_AdminProductChanges_AdminLoginDetails">
+      <End Role="AdminLoginDetails" EntitySet="AdminLoginDetails" />
+      <End Role="AdminProductChanges" EntitySet="AdminProductChanges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseProductDetail_ProductDetail" Association="Self.FK_PurchaseProductDetail_ProductDetail">
+      <End Role="ProductDetail" EntitySet="ProductDetail" />
+      <End Role="PurchaseProductDetail" EntitySet="PurchaseProductDetail" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

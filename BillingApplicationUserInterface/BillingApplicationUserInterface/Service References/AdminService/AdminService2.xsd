@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CommonClasses" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CommonClasses" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfProductDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProductDetail" nillable="true" type="tns:ProductDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProductDetail" nillable="true" type="tns:ArrayOfProductDetail" />
+  <xs:complexType name="ProductDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PurchaseProductDetails" nillable="true" type="tns:ArrayOfPurchaseProductDetail" />
+      <xs:element minOccurs="0" name="price" type="xs:double" />
+      <xs:element minOccurs="0" name="productID" type="xs:int" />
+      <xs:element minOccurs="0" name="productName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="quantity" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductDetail" nillable="true" type="tns:ProductDetail" />
+  <xs:complexType name="ArrayOfPurchaseProductDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PurchaseProductDetail" nillable="true" type="tns:PurchaseProductDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPurchaseProductDetail" nillable="true" type="tns:ArrayOfPurchaseProductDetail" />
+  <xs:complexType name="PurchaseProductDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Customer_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Discount_Percentage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Discounted_Amount" type="xs:int" />
+      <xs:element minOccurs="0" name="Discounted_Bill" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductDetail" nillable="true" type="tns:ProductDetail" />
+      <xs:element minOccurs="0" name="Total_Bill_Amount" type="xs:int" />
+      <xs:element minOccurs="0" name="price" type="xs:int" />
+      <xs:element minOccurs="0" name="productID" type="xs:int" />
+      <xs:element minOccurs="0" name="productName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="purchaseProductID" type="xs:long" />
+      <xs:element minOccurs="0" name="quantity" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PurchaseProductDetail" nillable="true" type="tns:PurchaseProductDetail" />
+</xs:schema>

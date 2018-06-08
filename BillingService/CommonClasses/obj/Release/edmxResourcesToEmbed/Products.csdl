@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProductsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdminLoginDetail">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AdminProductChanges" Relationship="Self.FK_AdminProductChanges_AdminLoginDetails" FromRole="AdminLoginDetails" ToRole="AdminProductChanges" />
+  </EntityType>
+  <EntityType Name="AdminProductChanx">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="userID" Type="Int32" Nullable="false" />
+    <Property Name="productID" Type="Int32" Nullable="false" />
+    <Property Name="productName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="price" Type="Double" Nullable="false" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AdminLoginDetail" Relationship="Self.FK_AdminProductChanges_AdminLoginDetails" FromRole="AdminProductChanges" ToRole="AdminLoginDetails" />
+  </EntityType>
+  <EntityType Name="ProductDetail">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="productID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="productName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="price" Type="Double" Nullable="false" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PurchaseProductDetails" Relationship="Self.FK_PurchaseProductDetail_ProductDetail" FromRole="ProductDetail" ToRole="PurchaseProductDetail" />
+  </EntityType>
+  <EntityType Name="PurchaseProductDetail">
+    <Key>
+      <PropertyRef Name="purchaseProductID" />
+    </Key>
+    <Property Name="purchaseProductID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Customer_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="productID" Type="Int32" Nullable="false" />
+    <Property Name="productName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="price" Type="Int32" Nullable="false" />
+    <Property Name="quantity" Type="Int32" Nullable="false" />
+    <Property Name="Total_Bill_Amount" Type="Int32" Nullable="false" />
+    <Property Name="Discount_Percentage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Discounted_Amount" Type="Int32" Nullable="false" />
+    <Property Name="Discounted_Bill" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ProductDetail" Relationship="Self.FK_PurchaseProductDetail_ProductDetail" FromRole="PurchaseProductDetail" ToRole="ProductDetail" />
+  </EntityType>
+  <EntityType Name="UserLoggedInDetail">
+    <Key>
+      <PropertyRef Name="SI_No" />
+    </Key>
+    <Property Name="SI_No" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="LoggedInTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="UserLoginCredential" Relationship="Self.FK_UserLoggedInDetails_UserLoginCredentials" FromRole="UserLoggedInDetails" ToRole="UserLoginCredentials" />
+  </EntityType>
+  <EntityType Name="UserLoginCredential">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="UserLoggedInDetails" Relationship="Self.FK_UserLoggedInDetails_UserLoginCredentials" FromRole="UserLoginCredentials" ToRole="UserLoggedInDetails" />
+  </EntityType>
+  <Association Name="FK_AdminProductChanges_AdminLoginDetails">
+    <End Role="AdminLoginDetails" Type="Self.AdminLoginDetail" Multiplicity="1" />
+    <End Role="AdminProductChanges" Type="Self.AdminProductChanx" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdminLoginDetails">
+        <PropertyRef Name="userID" />
+      </Principal>
+      <Dependent Role="AdminProductChanges">
+        <PropertyRef Name="userID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PurchaseProductDetail_ProductDetail">
+    <End Role="ProductDetail" Type="Self.ProductDetail" Multiplicity="1" />
+    <End Role="PurchaseProductDetail" Type="Self.PurchaseProductDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductDetail">
+        <PropertyRef Name="productID" />
+      </Principal>
+      <Dependent Role="PurchaseProductDetail">
+        <PropertyRef Name="productID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserLoggedInDetails_UserLoginCredentials">
+    <End Role="UserLoginCredentials" Type="Self.UserLoginCredential" Multiplicity="1" />
+    <End Role="UserLoggedInDetails" Type="Self.UserLoggedInDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserLoginCredentials">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="UserLoggedInDetails">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DataEntitiesForBilling" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdminLoginDetails" EntityType="Self.AdminLoginDetail" />
+    <EntitySet Name="AdminProductChanges" EntityType="Self.AdminProductChanx" />
+    <EntitySet Name="ProductDetails" EntityType="Self.ProductDetail" />
+    <EntitySet Name="PurchaseProductDetails" EntityType="Self.PurchaseProductDetail" />
+    <EntitySet Name="UserLoggedInDetails" EntityType="Self.UserLoggedInDetail" />
+    <EntitySet Name="UserLoginCredentials" EntityType="Self.UserLoginCredential" />
+    <AssociationSet Name="FK_AdminProductChanges_AdminLoginDetails" Association="Self.FK_AdminProductChanges_AdminLoginDetails">
+      <End Role="AdminLoginDetails" EntitySet="AdminLoginDetails" />
+      <End Role="AdminProductChanges" EntitySet="AdminProductChanges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PurchaseProductDetail_ProductDetail" Association="Self.FK_PurchaseProductDetail_ProductDetail">
+      <End Role="ProductDetail" EntitySet="ProductDetails" />
+      <End Role="PurchaseProductDetail" EntitySet="PurchaseProductDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserLoggedInDetails_UserLoginCredentials" Association="Self.FK_UserLoggedInDetails_UserLoginCredentials">
+      <End Role="UserLoginCredentials" EntitySet="UserLoginCredentials" />
+      <End Role="UserLoggedInDetails" EntitySet="UserLoggedInDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

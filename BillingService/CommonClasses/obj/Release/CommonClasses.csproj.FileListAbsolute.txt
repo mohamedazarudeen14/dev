@@ -1,0 +1,10 @@
+D:\Projects\BillingService\CommonClasses\bin\Release\CommonClasses.dll.config
+D:\Projects\BillingService\CommonClasses\bin\Release\CommonClasses.dll
+D:\Projects\BillingService\CommonClasses\bin\Release\CommonClasses.pdb
+D:\Projects\BillingService\CommonClasses\bin\Release\EntityFramework.dll
+D:\Projects\BillingService\CommonClasses\bin\Release\EntityFramework.SqlServer.dll
+D:\Projects\BillingService\CommonClasses\bin\Release\EntityFramework.xml
+D:\Projects\BillingService\CommonClasses\bin\Release\EntityFramework.SqlServer.xml
+D:\Projects\BillingService\CommonClasses\obj\Release\CommonClasses.dll
+D:\Projects\BillingService\CommonClasses\obj\Release\CommonClasses.pdb
+D:\Projects\BillingService\CommonClasses\obj\Release\CommonClasses.csprojResolveAssemblyReference.cache

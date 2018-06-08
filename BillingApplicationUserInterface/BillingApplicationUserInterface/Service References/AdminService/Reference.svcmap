@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="30cc06c2-ae05-43cf-9881-cf8fc4dddf74" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/CustomerServiceForBilling/AdminService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AdminService.xsd" MetadataType="Schema" ID="1301b998-24c4-40a0-a1f6-c35fe470c7f5" SourceId="1" SourceUrl="http://localhost/CustomerServiceForBilling/AdminService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AdminService.wsdl" MetadataType="Wsdl" ID="251c892b-1ccf-46d2-b41d-a68d78575f4d" SourceId="1" SourceUrl="http://localhost/CustomerServiceForBilling/AdminService.svc?wsdl" />
+    <MetadataFile FileName="AdminService1.xsd" MetadataType="Schema" ID="62b3c763-c9cd-4a62-bb94-c9cadb4906a8" SourceId="1" SourceUrl="http://localhost/CustomerServiceForBilling/AdminService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AdminService2.xsd" MetadataType="Schema" ID="22d33ebd-c524-48bc-9861-9204b21301f4" SourceId="1" SourceUrl="http://localhost/CustomerServiceForBilling/AdminService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

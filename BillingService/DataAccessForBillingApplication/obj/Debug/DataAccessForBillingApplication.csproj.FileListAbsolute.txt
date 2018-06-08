@@ -1,0 +1,20 @@
+C:\Users\Unity\Documents\Visual Studio 2015\Projects\BillingApplication\DataAccessForBillingApplication\obj\Debug\DataAccessForBillingApplication.csprojResolveAssemblyReference.cache
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataAccessForBillingApplication\bin\Debug\DataAccessForBillingApplication.dll.config
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataAccessForBillingApplication\bin\Debug\DataAccessForBillingApplication.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataAccessForBillingApplication\bin\Debug\DataAccessForBillingApplication.pdb
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataAccessForBillingApplication\bin\Debug\EntityFramework.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataAccessForBillingApplication\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataAccessForBillingApplication\bin\Debug\SharedClasses.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataAccessForBillingApplication\bin\Debug\SharedClasses.pdb
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataAccessForBillingApplication\bin\Debug\EntityFramework.xml
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataAccessForBillingApplication\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataAccessForBillingApplication\obj\Debug\DataAccessForBillingApplication.dll
+C:\Users\Unity\documents\visual studio 2015\Projects\BillingApplication\DataAccessForBillingApplication\obj\Debug\DataAccessForBillingApplication.pdb
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Debug\DataAccessForBillingApplication.dll.config
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Debug\DataAccessForBillingApplication.dll
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Debug\DataAccessForBillingApplication.pdb
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Debug\SharedClasses.dll
+D:\Projects\BillingService\DataAccessForBillingApplication\bin\Debug\SharedClasses.pdb
+D:\Projects\BillingService\DataAccessForBillingApplication\obj\Debug\DataAccessForBillingApplication.csprojResolveAssemblyReference.cache
+D:\Projects\BillingService\DataAccessForBillingApplication\obj\Debug\DataAccessForBillingApplication.dll
+D:\Projects\BillingService\DataAccessForBillingApplication\obj\Debug\DataAccessForBillingApplication.pdb

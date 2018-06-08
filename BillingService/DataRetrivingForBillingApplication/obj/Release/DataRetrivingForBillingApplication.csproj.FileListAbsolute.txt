@@ -1,0 +1,14 @@
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Release\DataRetrivingForBillingApplication.dll.config
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Release\DataRetrivingForBillingApplication.dll
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Release\DataRetrivingForBillingApplication.pdb
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Release\CommonClasses.dll
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Release\DataAccessForBillingApplication.dll
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Release\EntityFramework.dll
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Release\EntityFramework.SqlServer.dll
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Release\CommonClasses.pdb
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Release\DataAccessForBillingApplication.pdb
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Release\EntityFramework.xml
+D:\Projects\BillingService\DataRetrivingForBillingApplication\bin\Release\EntityFramework.SqlServer.xml
+D:\Projects\BillingService\DataRetrivingForBillingApplication\obj\Release\DataRetrivingForBillingApplication.csprojResolveAssemblyReference.cache
+D:\Projects\BillingService\DataRetrivingForBillingApplication\obj\Release\DataRetrivingForBillingApplication.dll
+D:\Projects\BillingService\DataRetrivingForBillingApplication\obj\Release\DataRetrivingForBillingApplication.pdb

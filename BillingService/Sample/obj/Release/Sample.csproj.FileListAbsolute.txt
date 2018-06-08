@@ -1,0 +1,10 @@
+D:\Projects\BillingService\Sample\bin\Release\Sample.dll.config
+D:\Projects\BillingService\Sample\bin\Release\Sample.dll
+D:\Projects\BillingService\Sample\bin\Release\Sample.pdb
+D:\Projects\BillingService\Sample\bin\Release\EntityFramework.dll
+D:\Projects\BillingService\Sample\bin\Release\EntityFramework.SqlServer.dll
+D:\Projects\BillingService\Sample\bin\Release\EntityFramework.xml
+D:\Projects\BillingService\Sample\bin\Release\EntityFramework.SqlServer.xml
+D:\Projects\BillingService\Sample\obj\Release\Sample.csprojResolveAssemblyReference.cache
+D:\Projects\BillingService\Sample\obj\Release\Sample.dll
+D:\Projects\BillingService\Sample\obj\Release\Sample.pdb

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AzarudeenModelStoreContainer" CdmEntityContainer="AzarudeenEntities">
+    <EntitySetMapping Name="AdminLoginDetails">
+      <EntityTypeMapping TypeName="AzarudeenModel.AdminLoginDetail">
+        <MappingFragment StoreEntitySet="AdminLoginDetails">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdminProductChanges">
+      <EntityTypeMapping TypeName="AzarudeenModel.AdminProductChanx">
+        <MappingFragment StoreEntitySet="AdminProductChanges">
+          <ScalarProperty Name="userID" ColumnName="userID" />
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="productName" ColumnName="productName" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductDetails">
+      <EntityTypeMapping TypeName="AzarudeenModel.ProductDetail">
+        <MappingFragment StoreEntitySet="ProductDetail">
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="productName" ColumnName="productName" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseProductDetails">
+      <EntityTypeMapping TypeName="AzarudeenModel.PurchaseProductDetail">
+        <MappingFragment StoreEntitySet="PurchaseProductDetail">
+          <ScalarProperty Name="purchaseProductID" ColumnName="purchaseProductID" />
+          <ScalarProperty Name="Customer_Name" ColumnName="Customer Name" />
+          <ScalarProperty Name="productID" ColumnName="productID" />
+          <ScalarProperty Name="productName" ColumnName="productName" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="Total_Bill_Amount" ColumnName="Total Bill Amount" />
+          <ScalarProperty Name="Discount_Percentage" ColumnName="Discount Percentage" />
+          <ScalarProperty Name="Discounted_Amount" ColumnName="Discounted Amount" />
+          <ScalarProperty Name="Discounted_Bill" ColumnName="Discounted Bill" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserLoggedInDetails">
+      <EntityTypeMapping TypeName="AzarudeenModel.UserLoggedInDetail">
+        <MappingFragment StoreEntitySet="UserLoggedInDetails">
+          <ScalarProperty Name="SI_No" ColumnName="SI.No" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="LoggedInTime" ColumnName="LoggedInTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserLoginCredentials">
+      <EntityTypeMapping TypeName="AzarudeenModel.UserLoginCredential">
+        <MappingFragment StoreEntitySet="UserLoginCredentials">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
